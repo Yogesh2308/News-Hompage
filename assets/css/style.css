@@ -1,0 +1,176 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+  
+}
+body{
+    background-color: hsl(36, 100%, 99%);
+    padding-bottom: 4rem;
+}
+
+.navigation {
+  display: none;
+  position: relative;
+}
+.header {
+  padding: 26px 15px;
+  position: relative;
+}
+.close-btn {
+  background: transparent;
+  border: none;
+  outline: none;
+  position: absolute;
+  right: 6rem;
+  top: 1.25rem;
+  z-index: 99999;
+  cursor: pointer;;
+}
+.navigation.active{
+  height: 100%;
+  width: 0;
+  display: block;
+  position: fixed;
+  z-index: 1;
+  padding: 20px;
+  top: 0;
+  right: -75px;
+  background-color: #fff;
+  overflow-x: hidden;
+  transition:all 0.5s ease-in-out;
+}
+.nav-menu{
+  position: absolute;
+  transform: translateY(-50%);
+  top: 50%;
+  transition: all 0.3s ease-in-out;
+}
+.nav-menu li a{
+  padding: 8px;
+  text-align: left;
+  display: block;
+  transition: 0.3s;
+}
+.header .container {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  flex-direction: row;
+  max-width: 1200px;
+  align-items: center;
+}
+.logo img {
+  width: 100%;
+}
+.logo {
+  width: 48px;
+}
+.mob-menu {
+  background: transparent;
+  border: none;
+  position: relative;
+}
+.nav-menu li {
+  list-style: none;
+  margin: 10px 0;
+}
+.nav-menu li a {
+  color: hsl(236, 13%, 42%);
+  text-decoration: none;
+}
+
+.banner-image-text h1{
+    margin: 1.1rem 0;
+    min-width: 215px;
+    line-height: 1;
+    font-size: 2.6rem;
+}
+.banner-image-text p{
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin-bottom: 2.5rem;
+}
+.banner-image-text .btn{
+    background-color: hsl(5, 85%, 63%);
+    padding: 16px 42px;
+    text-decoration: none;
+    font-size: 0.8rem;
+    color: white;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+.banner-image-text{
+    margin-bottom: 4.9rem;
+}
+.new h1 {
+    font-size: 2rem;
+    margin-bottom: 1.8rem;
+    color: hsl(35, 77%, 62%);
+}
+.new{
+    background-color: hsl(240, 100%, 5%);
+    padding: 20px;
+    max-width: 1000px;
+}
+.new h4{
+    font-size: 1.28rem;
+    margin-bottom: 0.95rem;
+    color: white;
+}
+.new p{
+    font-size: 0.96rem;
+    color: hsl(233, 8%, 79%);
+    line-height: 1.5;
+    margin-bottom: 1.9rem;
+    padding: 0 2px;
+}
+.divider-line{
+    border-bottom: 1px solid hsl(233, 8%, 79%);
+    margin: 20px 0;
+}
+
+.div1 img {
+  width: 100%;
+}
+.banner .container{
+    padding: 2px 15px;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+.parent {
+  display: grid;
+  padding: 0 0 2.4rem 0;
+}
+.card img{
+    width: 110px;
+}
+.card{
+    display: flex;
+    margin: 15px 0;
+}
+.card-text {
+    padding: 0 0 0 1.2rem;
+}
+.card-text h1 {
+    font-size: 2rem;
+    color: hsl(233, 8%, 79%);
+    margin-bottom: 0.55rem;
+}
+.card-text h2 {
+    font-size: 1.05rem;
+    margin-bottom: 0.75rem;
+}
+.card-text p{
+    font-size: 0.95rem;
+    line-height: 1.4;
+    color:  hsl(236, 13%, 42%);
+}
+.attribution{
+  text-align: center;
+  margin-top: 2rem;
+}
+
